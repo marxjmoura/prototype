@@ -45,16 +45,23 @@
   </ul>
   <div class="tab-content">
     <div id="operation" class="tab-pane show active">
-      {{{ include 'app/pre-trade-info/_tab-operation.hbs' }}}
+      <div class="row">
+        <div class="col-8">
+          {{{ include 'app/pre-trade-info/_operation.hbs' }}}
+        </div>
+        <div class="col-4">
+          {{{ include 'app/pre-trade-info/_comments.hbs' }}}
+        </div>
+      </div>
     </div>
     <div id="documents" class="tab-pane">
-      {{{ include 'app/pre-trade-info/_tab-documents.hbs' }}}
+      {{{ include 'app/pre-trade-info/_documents.hbs' }}}
     </div>
     <div id="pendencies" class="tab-pane">
-      {{{ include 'app/pre-trade-info/_tab-pendencies.hbs' }}}
+      {{{ include 'app/pre-trade-info/_pendencies.hbs' }}}
     </div>
     <div id="confirmation" class="tab-pane">
-      {{{ include 'app/pre-trade-info/_tab-confirmation.hbs' }}}
+      {{{ include 'app/pre-trade-info/_confirmation.hbs' }}}
     </div>
   </div>
 </div>
