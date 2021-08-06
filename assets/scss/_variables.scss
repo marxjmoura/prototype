@@ -26,4 +26,17 @@ $dark:   #202730;
 $font-family-base: 'Poppins', sans-serif;
 $font-size-base: .9rem;
 
+$display-font-sizes: (
+  1: 2.5rem,
+  2: 2.25rem,
+  3: 2rem,
+  4: 1.75rem,
+  5: 1.5rem,
+  6: 1.35rem
+);
+
+$display-font-weight: 200;
+
+$hr-color: $gray-500;
+
 $table-hover-bg: $gray-100;
