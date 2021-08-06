@@ -1,0 +1,15 @@
+.table > tbody > tr > th,
+.table > tbody > tr > td {
+  vertical-align: middle;
+  // border-top: none;
+  // border-bottom: $border-width $border-color solid;
+}
+
+// .table.table-inbox a {
+//   color: $body-color;
+//   text-decoration: none;
+// }
+
+.table {
+  table-layout: auto;
+}

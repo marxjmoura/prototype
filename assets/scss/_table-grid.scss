@@ -1,0 +1,45 @@
+.table-grid {
+  display: table;
+  table-layout: auto;
+  width: 100%;
+  border-top: $border-width $border-color solid;
+  border-bottom: $border-width $border-color solid;
+
+  a {
+    color: $body-color;
+    text-decoration: none;
+  }
+
+  > .row {
+    display: table-row;
+
+    > .col,
+    > .col-auto {
+      display: table-cell;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      vertical-align: middle;
+    }
+
+    > .col {
+      width: 100%;
+    }
+  }
+
+  &.table-bordered > .row > .col,
+  &.table-bordered > .row > .col-auto {
+    border-bottom: $border-width $border-color solid;
+  }
+
+  &.table-hover > .row:not(.row-header):hover > .col,
+  &.table-hover > .row:not(.row-header):hover > .col-auto,
+  &.table-striped > .row:nth-child(#{$table-striped-order}):hover > .col,
+  &.table-striped > .row:nth-child(#{$table-striped-order}):hover > .col-auto {
+    background-color: $table-hover-bg;
+  }
+
+  &.table-striped > .row:nth-child(#{$table-striped-order}) > .col,
+  &.table-striped > .row:nth-child(#{$table-striped-order}) > .col-auto {
+    background: $table-striped-bg;
+  }
+}
