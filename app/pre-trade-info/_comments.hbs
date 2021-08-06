@@ -1,13 +1,13 @@
 <div class="card">
   <div class="card-body bg-light">
-    <div class="text-muted mb-2">
+    <div class="text-muted mb-3">
       Comentários
     </div>
-    <div class="d-flex align-items-start bg-white p-3">
-      <div class="text-muted p-2">
+    <div class="d-flex align-items-start bg-white rounded mb-2 p-3">
+      <div class="text-muted">
         <i class="fas fa-fw fa-lg fa-user"></i>
       </div>
-      <div class="bg-white">
+      <div class="flex-grow-1 ps-2">
         <div class="mb-1">
           <span class="text-primary">user001</span> (Officer)
           <small class="text-muted ps-1">
@@ -19,11 +19,11 @@
         </small>
       </div>
     </div>
-    <div class="d-flex align-items-start bg-white p-3">
-      <div class="text-muted p-2">
+    <div class="d-flex align-items-start bg-white rounded mb-2 p-3">
+      <div class="text-muted">
         <i class="fas fa-fw fa-lg fa-user"></i>
       </div>
-      <div class="bg-white">
+      <div class="flex-grow-1 ps-2">
         <div class="mb-1">
           <span class="text-primary">user002</span> (Officer)
           <small class="text-muted ps-1">
@@ -35,11 +35,11 @@
         </small>
       </div>
     </div>
-    <div class="d-flex align-items-start bg-white p-3">
-      <div class="text-muted p-2">
+    <div class="d-flex align-items-start bg-white rounded mb-2 p-3">
+      <div class="text-muted">
         <i class="fas fa-fw fa-lg fa-user"></i>
       </div>
-      <div class="bg-white">
+      <div class="flex-grow-1 ps-2">
         <div class="mb-1">
           <span class="text-primary">user003</span> (TAX)
           <small class="text-muted ps-1">
@@ -55,13 +55,13 @@
       </div>
     </div>
 
-    <label for="comment" class="d-flex flex-column bg-white">
-      <div class="d-flex flex-column border rounded m-3">
-        <textarea id="comment" class="form-control shadow-none resize-none border-0" rows="3"></textarea>
-        <button type="button" class="btn btn-primary text-white ms-auto">
-          Comentar
-        </button>
-      </div>
+    <label for="comment" class="d-flex flex-column border rounded bg-white">
+      <textarea id="comment" class="form-control shadow-none resize-none border-0" rows="3"
+        placeholder="Escreva um comentário..."></textarea>
+      <button type="button" class="btn btn-primary text-white ms-auto"
+        style="border-bottom-left-radius: 0; border-top-right-radius: 0;">
+        Comentar
+      </button>
     </label>
   </div>
 </div>
