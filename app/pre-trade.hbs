@@ -28,6 +28,11 @@
       </a>
     </li>
     <li class="nav-item">
+      <a href="#approval" class="nav-link" data-bs-toggle="pill" data-bs-target="#approval">
+        Aprovação
+      </a>
+    </li>
+    <li class="nav-item">
       <a href="#documents" class="nav-link" data-bs-toggle="pill" data-bs-target="#documents">
         Documentos
       </a>
@@ -53,6 +58,9 @@
           {{{ include 'app/pre-trade-info/_comments.hbs' }}}
         </div>
       </div>
+    </div>
+    <div id="approval" class="tab-pane">
+      {{{ include 'app/pre-trade-info/_approval.hbs' }}}
     </div>
     <div id="documents" class="tab-pane">
       {{{ include 'app/pre-trade-info/_documents.hbs' }}}
