@@ -1,0 +1,51 @@
+.checkbox {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  margin: 0;
+
+  input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+
+    + .check-mark {
+      background-color: $white;
+      border: .12rem solid $gray-600;
+      display: flex;
+      height: 1.2rem;
+      width: 1.2rem;
+      position: relative;
+      border-radius: .12rem;
+      transition: all 0.2s ease;
+
+      &::after {
+        content: "";
+        margin: 0 auto;
+        width: 40%;
+        height: 80%;
+        border: solid $white;
+        border-width: 0 .125rem .125rem 0;
+        transform: rotate(45deg);
+      }
+    }
+
+    &:focus + .check-mark {
+      box-shadow: 0 0 0 .2rem rgba($primary, .25);
+    }
+
+    &:checked + .check-mark::after {
+      border-color: $body-color;
+    }
+
+    &:disabled + .check-mark {
+      opacity: .5;
+    }
+
+    &:disabled + .check-mark + .check-text {
+      text-decoration: line-through;
+    }
+  }
+}

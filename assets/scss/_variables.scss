@@ -35,8 +35,20 @@ $display-font-sizes: (
   6: 1.35rem
 );
 
+$border-width: 1px;
+
 $display-font-weight: 200;
 
 $hr-color: $gray-500;
 
 $table-hover-bg: $gray-100;
+
+$modal-backdrop-opacity: .5;
+$modal-fade-transform: scale(.9);
+$modal-transition: transform .1s ease-out;
+$modal-scale-transform: scale(.95);
+$modal-content-border-color: rgba($dark, .2);
+$modal-content-border-width: 10px;
+$modal-content-border-radius: 5px;
+$modal-header-border-width: $border-width;
+$modal-footer-border-width: $border-width;

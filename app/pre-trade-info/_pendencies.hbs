@@ -1,1 +1,141 @@
-Em construção...
+<div class="my-3">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newPendency">
+    <i class="fas fa-fw fa-plus"></i> Nova pendência
+  </button>
+</div>
+
+<div class="table-responsive">
+  <div class="table-grid table-hover table-bordered border-top-0 mb-3">
+    <div class="row row-header">
+      <div class="col-auto fw-bold">Pendência</div>
+      <div class="col-auto fw-bold">Área</div>
+      <div class="col-auto fw-bold">Pre-trade</div>
+      <div class="col-auto fw-bold">Data limite</div>
+      <div class="col-auto fw-bold">Data da entrega</div>
+      <div class="col-auto fw-bold"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-auto">
+        <div>Apresentar DI</div>
+        <small class="text-muted">
+          DI - Declaração de Importação
+        </small>
+      </div>
+      <div class="col-auto">
+        <span class="text-muted">--</span>
+      </div>
+      <div class="col-auto">
+        10050
+      </div>
+      <div class="col-auto">
+        08/08/2021
+      </div>
+      <div class="col-auto">
+        <span class="text-muted">--</span>
+      </div>
+      <div class="col-auto">
+        <div class="text-end">
+          <div class="d-inline-flex align-items-center">
+            <button type="button" class="btn btn-sm btn-link text-danger ms-auto">
+              Excluir <i class="fas fa-fw fa-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-auto">
+        <div>
+          Balanço e RDE atualizados
+          <span class="badge bg-danger rounded-pill">
+            Crítico
+          </span>
+        </div>
+        <small class="text-muted">
+          Documentação atualizada
+        </small>
+      </div>
+      <div class="col-auto">
+        AML
+      </div>
+      <div class="col-auto">
+        10060
+      </div>
+      <div class="col-auto">
+        08/08/2021
+      </div>
+      <div class="col-auto">
+        08/08/2021
+      </div>
+      <div class="col-auto">
+        <div class="text-end">
+          <div class="d-inline-flex align-items-center">
+            <button type="button" class="btn btn-sm btn-link text-danger ms-auto">
+              Excluir <i class="fas fa-fw fa-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="newPendency" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Nova pendência</h5>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label>
+            Tipo de pendência
+          </label>
+          <select class="form-select">
+            <option hidden></option>
+            <option value="1">DI - Declaração de Importação </option>
+            <option value="2">IR - Declaração de Imposto de Renda</option>
+            <option value="3">NFS-e - Nota Fiscal Eletrônica</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <label>
+                Data limite
+              </label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label>
+                Data da entrega
+              </label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label>
+            Pendência
+          </label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label class="checkbox">
+            <span class="check-text pe-2">Crítico?</span>
+            <input type="checkbox">
+            <span class="check-mark"></span>
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
