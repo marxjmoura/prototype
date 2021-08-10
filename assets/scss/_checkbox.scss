@@ -41,6 +41,7 @@
     }
 
     &:disabled + .check-mark {
+      background-color: $input-disabled-bg;
       opacity: .5;
     }
 
