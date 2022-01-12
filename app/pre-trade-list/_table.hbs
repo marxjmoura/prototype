@@ -4,6 +4,7 @@
     <div class="row row-header">
       <div class="col-auto fw-bold">Pre-trade</div>
       <div class="col-auto fw-bold">Operação</div>
+      <div class="col-auto fw-bold">Natureza</div>
       <div class="col-auto fw-bold">Contraparte</div>
       <div class="col-auto fw-bold">Destino</div>
       <div class="col-auto fw-bold">Status</div>
@@ -11,52 +12,117 @@
 
     <div class="row row-header">
       <div class="col-auto">
-        <div class="input-group flex-nowrap">
-          <input type="text" class="form-control" placeholder="Número">
+        <div class="input-group flex-nowrap" style="max-width: 400px;">
+          <input type="text" class="form-control" placeholder="Motor">
+          <input type="text" class="form-control" placeholder="FTS">
+          <div class="btn-group dropdown-detached dropdown-keep-open">
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="far fa-minus-square fa-fw"></i> Prioridade
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2" checked="checked"> Alta
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> Média
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> Baixa
+                </label>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  Marcar todos
+                </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  Desmarcar todos
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="btn-group flex-nowrap">
+          <div class="btn-group dropdown-detached dropdown-keep-open">
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="far fa-minus-square fa-fw"></i> Tipo
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2" checked="checked"> FX
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> CDE
+                </label>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  Marcar todos
+                </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  Desmarcar todos
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-group dropdown-detached dropdown-keep-open">
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="far fa-check-square fa-fw"></i> Fluxo
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2" checked="checked"> Remessa
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2" checked="checked"> Internação
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2" checked="checked"> Pagamento
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2" checked="checked"> Recebimento
+                </label>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  Marcar todos
+                </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  Desmarcar todos
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="col-auto">
         <div class="input-group flex-nowrap">
-          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
-            Tipo
-          </button>
-          <ul class="dropdown-menu keep-open">
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> FX
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> CDE
-              </label>
-            </li>
-          </ul>
-          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
-            Fluxo
-          </button>
-          <ul class="dropdown-menu keep-open">
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Remessa
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Internação
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Pagamento
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Recebimento
-              </label>
-            </li>
-          </ul>
+          <input type="text" class="form-control" placeholder="Código">
         </div>
       </div>
       <div class="col-auto">
@@ -70,82 +136,136 @@
         </div>
       </div>
       <div class="col-auto">
-        <div class="input-group flex-nowrap">
-          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
-            OPS
-          </button>
-          <ul class="dropdown-menu keep-open">
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Aprovado
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Bloqueado
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Pendente
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Não analisado
-              </label>
-            </li>
-          </ul>
-          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
-            AML
-          </button>
-          <ul class="dropdown-menu keep-open">
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Aprovado
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Bloqueado
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Pendente
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Não analisado
-              </label>
-            </li>
-          </ul>
-          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
-            TAX
-          </button>
-          <ul class="dropdown-menu keep-open">
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Aprovado
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Bloqueado
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Pendente
-              </label>
-            </li>
-            <li>
-              <label class="dropdown-item">
-                <input type="checkbox" class="form-check-input me-2" checked="checked"> Não analisado
-              </label>
-            </li>
-          </ul>
+        <div class="btn-group flex-nowrap">
+          <div class="btn-group dropdown-detached dropdown-keep-open">
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="far fa-check-square fa-fw"></i> OPS
+            </button>
+            <ul class="dropdown-menu keep-open">
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2" checked="checked"> Isento
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2" checked="checked"> Aprovado
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2" checked="checked"> Bloqueado
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2" checked="checked"> Pendente
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2" checked="checked"> Não analisado
+                </label>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  Marcar todos
+                </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  Desmarcar todos
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-group dropdown-detached dropdown-keep-open">
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="far fa-square fa-fw"></i> AML
+            </button>
+            <ul class="dropdown-menu keep-open">
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> Isento
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> Aprovado
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> Bloqueado
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> Pendente
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> Não analisado
+                </label>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  Marcar todos
+                </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  Desmarcar todos
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-group dropdown-detached dropdown-keep-open">
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="far fa-square fa-fw"></i> TAX
+            </button>
+            <ul class="dropdown-menu keep-open">
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> Isento
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> Aprovado
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> Bloqueado
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> Pendente
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="form-check-input me-2"> Não analisado
+                </label>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  Marcar todos
+                </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  Desmarcar todos
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -154,7 +274,9 @@
       <div class="col-auto">
         <div class="d-flex align-items-center">
           <span class="pe-2">
-            0001
+            <small class="text-muted">Motor:</small> 0001
+            <span class="px-1"></span>
+            <small class="text-muted">FTS:</small> 25001
           </span>
           <span class="badge bg-danger rounded-pill">
             Alta prioridade
@@ -171,6 +293,18 @@
         <div>
           5.000,00 (BRL)
           <i class="fas fa-caret-down text-danger"></i>
+        </div>
+      </div>
+      <div class="col-auto text-truncate">
+        <div class="d-inline-block" data-bs-toggle="popover" data-bs-trigger="hover"
+          data-bs-placement="top" data-bs-container="body"
+          data-bs-content="35563: Juros de Financiamento à Exportação de Bens e Serviços FINEX descontos de cambiais">
+          <div>
+            35563-58-0-58-90
+          </div>
+          <span class="text-muted">
+            Juros de Financiamento à Exportação...
+          </span>
         </div>
       </div>
       <div class="col-auto">
@@ -217,7 +351,9 @@
       <div class="col-auto">
         <div class="d-flex align-items-center">
           <span class="pe-2">
-            0002
+            <small class="text-muted">Motor:</small> 0001
+            <span class="px-1"></span>
+            <small class="text-muted">FTS:</small> 25001
           </span>
           <span class="badge bg-warning rounded-pill text-dark fw-normal">
             Média prioridade
@@ -234,6 +370,18 @@
         <div>
           120.000,00 (USD)
           <i class="fas fa-caret-up text-success"></i>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="d-inline-block" data-bs-toggle="popover" data-bs-trigger="hover"
+          data-bs-placement="top" data-bs-container="body"
+          data-bs-content="27045: Resseguros - Prêmio">
+          <div>
+            27045-58-0-58-90
+          </div>
+          <span class="text-muted">
+            Resseguros - Prêmio
+          </span>
         </div>
       </div>
       <div class="col-auto">
